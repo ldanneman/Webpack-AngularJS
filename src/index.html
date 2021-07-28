@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body ng-app="gridApp">
+    <div ng-controller="gridController as grid">
+        <table>
+            <tr>
+                <th class="heading" ng-repeat="(key, value) in grid.record[0]"> {{ key }} </th>
+            </tr>
+            <tr ng-repeat="x in grid.record">
+                <td ng-repeat="(key, value) in x"> {{value}} </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
