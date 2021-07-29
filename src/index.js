@@ -7,3 +7,9 @@ angular.module("gridApp", [])
     var self = this;
     self.record = data
 })
+
+
+// app.controller('gridController', function( $http) {
+//     $http.get("./data.json")
+//     .then( (response) => {this.record = response.data;});
+// })
